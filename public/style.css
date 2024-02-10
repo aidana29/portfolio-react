@@ -7,9 +7,21 @@ body {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 h1 {
     padding: 0;
+    margin: 15px 0;
     font-size: 40px;
+    font-weight: 700;
+}
+
+p span {
+    font-weight: 500;
+    color: black;
 }
 
 .bodyText {
@@ -18,27 +30,30 @@ h1 {
 }
 
 .smallText {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: #535353;
 }
 
 .hello-i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 0;
 }
 
 .navButton {
     background-color: transparent;
-    border: none;
+    border: solid 1px white;
+    border-radius: 5px;
     padding: 10px;
+    color: #535353;
+    font-weight: 300;
 }
 
 .navButton:hover {
     border: solid 1px black;
-    border-radius: 5px;
+    color: black;
     cursor: pointer;
 }
 
 .sns-icon {
-    height: 20px;;
+    height: 20px;
 }

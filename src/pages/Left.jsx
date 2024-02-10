@@ -15,12 +15,12 @@ const Left = () => {
                 <p className="hello-i">👋</p>
                 <p className="smallText">Hello, I am</p>
                 <h1>Dana</h1>
-                <p className="bodyText">I am a <span> backend developer,</span> <br/> based in Seoul</p>
-                <p className="bodyText">Fluent in<span> English, Korean and Russian</span></p>
-                <div className="cv-wrap">
+                <p className="bodyText">I am a <span> backend developer,</span> based in Seoul.<br/>
+                Fluent in<span> English, Korean and Russian</span></p>
+                <ContactWrap>
                     <p>aidana1529@gmail.com</p>
                     <a href="./media/Dana_CV_ENG_new.pdf" target="_blank">Download CV</a>
-                </div>
+                </ContactWrap>
             </IntroWrap>
             <SnsWrap>
             <SnsIcon link="https://www.linkedin.com/in/dana29/" img="./media/linkedin.svg"/>
@@ -32,12 +32,12 @@ const Left = () => {
 }
 
 const LeftWrap = styled.div`
-flex: 0 1 20rem;
+position: sticky;
+top: 0;
+flex: 0 0 30%;
 display: flex;
-width: 100%;
 align-items: start;
 justify-content: space-between;
-// background-color: pink;
 flex-direction: column;
 box-sizing: border-box;
 `
@@ -48,17 +48,33 @@ width: 100%;
 align-items: start;
 justify-content: space-between;
 padding-top: 40px;
-box-sizing: border-box;
 `
 
 const IntroWrap = styled.div`
-background-color: pink;
 width: 100%;
 height: 100%;
 display: flex;
 flex-direction: column;
 align-content: center;
 justify-content: center;
+`
+
+const ContactWrap = styled.div`
+width: 85%;
+display: flex;
+align-content: center;
+justify-content: space-between;
+padding-top: 15px;
+> * {
+    text-align: center;
+    width: 140px;
+    font-size: 0.7rem;
+    border: solid 0.5px #535353;;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 0;
+    color: #535353;
+  }
 `
 
 const SnsWrap = styled.div`
