@@ -14,7 +14,7 @@ const App = () => {
 
 const MainWwrap = styled.div`
   box-sizing: border-box;
-  width: 80%;
+  width: 90%;
   height: 100vh;
   margin: 0 auto;
   display: flex;
