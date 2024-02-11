@@ -57,3 +57,20 @@ p span {
 .sns-icon {
     height: 20px;
 }
+
+p.section-i {
+    font-size: 20px;
+    padding-right: 15px;
+}
+
+img.project-media {
+    display: block;
+    height: 400px;
+    width: 450px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+a.project-link {
+    text-decoration: underline black;
+}
