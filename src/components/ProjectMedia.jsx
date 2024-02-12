@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import 'bootstrap/dist/css/bootstrap.css'; 
-import Carousel from "react-bootstrap/Carousel";
 import styled from "styled-components";
+import "bootstrap/dist/css/bootstrap.css";
+import Carousel from "react-bootstrap/Carousel";
 
 const ProjectMedia = (props) => {
   const [index, setIndex] = useState(0);
@@ -18,13 +18,13 @@ const ProjectMedia = (props) => {
         onSelect={handleSelect}
       >
         <Carousel.Item>
-          <img className="project-media" src={props.images1} alt="" />
+          <img className="project-media" src={props.image1} alt="" />
         </Carousel.Item>
         <Carousel.Item>
-          <img className="project-media" src={props.images2} alt="" />
+          <img className="project-media" src={props.image2} alt="" />
         </Carousel.Item>
         <Carousel.Item>
-          <img className="project-media" src={props.images3} alt="" />
+          <img className="project-media" src={props.image3} alt="" />
         </Carousel.Item>
       </Carousel>
     </CarouselWrap>

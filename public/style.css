@@ -27,6 +27,7 @@ p span {
 .bodyText {
     font-size: 1rem;
     color: #535353;
+    padding: 20px 0;
 }
 
 .smallText {
@@ -69,8 +70,4 @@ img.project-media {
     width: 450px;
     margin: 0 auto;
     padding-bottom: 50px;
-}
-
-a.project-link {
-    text-decoration: underline black;
 }

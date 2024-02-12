@@ -1,7 +1,7 @@
 import React from "react"
 import styled from 'styled-components';
 import NavButton from '../components/NavButton';
-import SnsIcon from '../components/SnsIcon';
+import SnsIcon from '../components/MySNS';
 
 const Left = () => {
     return(
@@ -15,7 +15,7 @@ const Left = () => {
                 <p className="hello-i">👋</p>
                 <p className="smallText">Hello, I am</p>
                 <h1>Dana</h1>
-                <p className="bodyText">I am a <span> backend developer,</span> based in Seoul.<br/>
+                <p>I am a <span> backend developer,</span> based in Seoul.<br/>
                 Fluent in<span> English, Korean and Russian</span></p>
                 <ContactWrap>
                     <p>aidana1529@gmail.com</p>
