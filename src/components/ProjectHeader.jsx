@@ -13,7 +13,6 @@ const ProjectHeader = (props) => {
 const ProjectInfoWrap = styled.div`
 > h2 {
   font-size: 1.5rem;
-  margin-top: 20px;
 }
 > p {
   font-size: 0.8rem;

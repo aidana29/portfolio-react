@@ -5,19 +5,20 @@ import styled from "styled-components";
 
 const App = () => {
   return (
-    <MainWwrap>
+    <MainWrap>
       <Left />
       <Right />
-    </MainWwrap>
+    </MainWrap>
   );
 };
 
-const MainWwrap = styled.div`
+const MainWrap = styled.div`
   box-sizing: border-box;
   width: 90%;
   height: 100vh;
   margin: 0 auto;
   display: flex;
 `;
+
 
 export default App;

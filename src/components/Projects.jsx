@@ -169,7 +169,7 @@ const Projects = () => {
 };
 
 const ProjectWrap = styled.div`
-padding-bottom: 40px;
+padding-bottom: 50px;
 `;
 
 const ProjectSourceCode = styled.div``;
