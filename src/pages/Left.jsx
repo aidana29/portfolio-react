@@ -46,6 +46,13 @@ const LeftWrap = styled.div`
   justify-content: space-between;
   flex-direction: column;
   box-sizing: border-box;
+  @media (max-width: 992px) {
+    position: static;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    margin-top: 80px;
+  }
 `
 
 const IntroWrap = styled.div`
@@ -58,9 +65,17 @@ const IntroWrap = styled.div`
   >p {
     margin: 0;
     padding: 10px 0;
+    @media (max-width: 992px) {
+    text-align: center;
+    }
   }
   >p.smallText {
     font-size: 1rem;
+  }
+  > h1 {
+    @media (max-width: 992px) {
+      text-align: center;
+      }
   }
 `;
 
@@ -83,6 +98,17 @@ const ContactWrap = styled.div`
     color: #535353;
     text-decoration: none;
   }
+  @media (max-width: 992px) {
+    align-items: center;
+    width: 100%;
+  }
+  @media (max-width: 600px) {
+    height: 110px;
+    margin-top: 15px;
+    > * {
+      padding: 10px 0;
+    }
+  }
 `;
 
 const SnsWrap = styled.div`
@@ -91,6 +117,12 @@ const SnsWrap = styled.div`
   justify-content: space-between;
   min-width: 40%;
   padding-bottom: 40px;
+  @media (max-width: 992px) {
+    padding-top: 40px;
+  }
+  @media (max-width: 600px) {
+    justify-content: space-between;
+  }
 `;
 
 export default Left;

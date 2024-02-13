@@ -18,6 +18,13 @@ const MainWrap = styled.div`
   height: 100vh;
   margin: 0 auto;
   display: flex;
+  @media (max-width: 992px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    height: max-content;
+  }
 `;
 
 

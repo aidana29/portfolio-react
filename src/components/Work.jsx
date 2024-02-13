@@ -86,15 +86,24 @@ const CompanyWrap = styled.div`
   width: 100%;
   display: flex;
   padding-bottom: 50px;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 const WorkPeriod = styled.p`
   width: 30%;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 const WorkInfo = styled.div`
   width: 70%;
   > p {
     color: #535353;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
   }
 `;
 
