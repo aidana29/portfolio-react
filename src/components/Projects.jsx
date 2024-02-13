@@ -11,18 +11,38 @@ const Projects = () => {
       <ProjectWrap>
         <ProjectHeader
           projectName="BrainBuddy"
-          projectPeriod="Feb 2023, Personal Project"
+          projectPeriod="Feb 2023, Personal Project, Full Stack"
         />
         <ProjectSourceCode>
+          <ProjectLink
+            linkIcon={"media/box-arrow-up-right.svg"}
+            projectLink="http://brainbuddy.s3-website.ap-northeast-2.amazonaws.com/"
+            projectLinkName="Deployed Website"
+          />
           <ProjectLink
             linkIcon={"media/box-arrow-up-right.svg"}
             projectLink="https://github.com/aidana29/brainbuddy-back/tree/main"
             projectLinkName="Backend Code"
           />
+          <ProjectLink
+            linkIcon={"media/box-arrow-up-right.svg"}
+            projectLink="https://github.com/aidana29/brainbuddy-front"
+            projectLinkName="Frontend Code"
+          />
         </ProjectSourceCode>
-        <p className="bodyText">Still in Development</p>
-        <ProjectMedia image1="./media/brainbuddy.gif" />
-        <p className="bodyText"></p>
+        <p className="bodyText">
+          BrainBuddy, a quiz application, engages users in a game-like
+          experience where they answer questions conditionally rendered to avoid
+          repetition upon correct answers. The frontend is constructed using
+          React.js, incorporating responsive design, styled-components, and
+          Material-UI for an enhanced user interface. React Router facilitates
+          smooth navigation between sections.
+        </p>
+        <ProjectMedia image1="./media/brainbuddy1.gif" image2="./media/brainbuddy2.gif" image3="./media/brainbuddy3.gif" />
+        <p className="bodyText">The application communicates with
+          a backend hosted on EC2, interacting with an RDS-hosted database.
+          Employing a layered pattern, the backend incorporates Error Handlers
+          and Token validation as middleware, ensuring robust functionality.</p>
         <ProjectStack>
           <p>React</p>
           <p>TypeScript</p>
@@ -38,7 +58,7 @@ const Projects = () => {
       <ProjectWrap>
         <ProjectHeader
           projectName="FluentT"
-          projectPeriod="Nov 2023, Internship Project"
+          projectPeriod="Nov 2023, Internship Project, Backend"
         />
         <ProjectSourceCode>
           <ProjectLink
@@ -76,7 +96,7 @@ const Projects = () => {
       <ProjectWrap>
         <ProjectHeader
           projectName="OneMore"
-          projectPeriod="Oct 9, 2023 - Oct 27, 2023, Bootcamp Project"
+          projectPeriod="Oct 9, 2023 - Oct 27, 2023, Bootcamp Project, Backend"
         />
         <ProjectSourceCode>
           <ProjectLink
@@ -122,7 +142,7 @@ const Projects = () => {
       <ProjectWrap>
         <ProjectHeader
           projectName="2SOP"
-          projectPeriod="Sep 18, 2023 - Oct 6, 2023, Bootcamp Project"
+          projectPeriod="Sep 18, 2023 - Oct 6, 2023, Bootcamp Project, Backend"
         />
         <ProjectSourceCode>
           <ProjectLink
@@ -145,8 +165,8 @@ const Projects = () => {
         </p>
         <ProjectMedia
           image1="./media/2sop2.gif"
-          image2="./media/onemore2.gif"
-          image3="./media/onemore3.gif"
+          image2="./media/2sop3.jpg"
+          image3="./media/2sop4.jpg"
         />
         <p className="bodyText">
           As a member of the backend team, I was responsible for login and
@@ -169,7 +189,7 @@ const Projects = () => {
 };
 
 const ProjectWrap = styled.div`
-padding-bottom: 50px;
+  padding-bottom: 50px;
 `;
 
 const ProjectSourceCode = styled.div``;
