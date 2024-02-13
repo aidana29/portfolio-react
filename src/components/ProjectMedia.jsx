@@ -35,6 +35,7 @@ const CarouselWrap = styled.div`
   display: block;
   height: 400px;
   padding-bottom: 30px;
+  z-index: 0;
 `;
 
 export default ProjectMedia;
